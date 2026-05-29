@@ -1,13 +1,12 @@
-#include<stdio.h>
-int main(){
-    int n,d,sum=0;
-    printf("enter the digit");
+#include <stdio.h>
+int main (){
+    int n,count=0;
+    printf("enter the the number ");
     scanf("%d",&n);
-    while (n>0){
-        d=n%10;
-        sum=sum+d;
-        n=n/10;
+    while(n>0){
+       n=n/10;
+        count++;
     }
-    printf("the sum of digit is=%d",sum);
+    printf("the no of digit is =%d",count);
     return 0;
 }
